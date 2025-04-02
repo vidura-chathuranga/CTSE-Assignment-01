@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: Menu Management Service
+  profiles:
+    active: DEV
+  data:
+    mongodb:
+      uri: ${MONGO_DB_URI}
+  main:
+    allow-bean-definition-overriding: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${ISSUER_URI}
