@@ -16,3 +16,8 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: ${ISSUER_URI}
+management:
+  endpoint:
+    web:
+      exposure:
+        include: health
