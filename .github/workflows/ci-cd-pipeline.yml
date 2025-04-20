@@ -101,6 +101,9 @@ jobs:
           task-definition: ${{ env.ECS_TASK_DEFINITION }}
           container-name: ${{ env.CONTAINER_NAME }}
           image: ${{ steps.build-image.outputs.image }}
+          environment-variables: |
+            MONGO_DB_URI=${{ secrets.DB_URI }}
+            ISSUER_URI=${{ secrets.ISSUER_URI }}
 
       - name: Deploy Amazon ECS task definition
         uses: aws-actions/amazon-ecs-deploy-task-definition@v2
