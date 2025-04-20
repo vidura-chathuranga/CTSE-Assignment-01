@@ -77,7 +77,7 @@ menu-management-service/
 
 ```bash
 # Clone the repo
-git clone https://github.com/<your-org>/CTSE-Assignment-01.git
+git clone https://github.com/CTSE-Assignment-01.git
 
 # Navigate to the service
 cd menu-management-service
