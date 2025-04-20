@@ -75,6 +75,4 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           MONGO_DB_URI: ${{ secrets.DB_URI }}
           ISSUER_URI: ${{ secrets.ISSUER_URI }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-         -Dsonar.projectKey=vidura-chathuranga_CTSE-Assignment-01 \
-         -Dsonar.organization=vidura-chathuranga
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=vidura-chathuranga_CTSE-Assignment-01 -Dsonar.organization=vidura-chathuranga -Dsonar.host.url=https://sonarcloud.io
