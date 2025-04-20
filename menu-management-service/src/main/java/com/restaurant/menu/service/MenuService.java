@@ -16,7 +16,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Log4j2
 public class MenuService {
-    // Injected dependency for interacting with Menu data in the database.
+    // Injected dependency for interacting with Menu data in the database
     private final MenuRepository menuRepository;
 
     // Creates a new Menu object and saves it to the database using the injected MenuRepository which calls MongoRepository's save method..
