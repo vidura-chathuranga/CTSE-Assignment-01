@@ -24,7 +24,6 @@ This project is developed as part of the **CTSE (Cloud Technologies and Software
 - **ECR** for storing container images
 - **Cognito** for identity and access management
 - **Application Load Balancer** for traffic distribution
-- **IAM** for access control and policy management
 
 ### 🔁 CI/CD
 - **GitHub Actions** for continuous integration and delivery
@@ -70,7 +69,7 @@ menu-management-service/
 ---
 
 ## 📸 Screenshots
-
+![CI/CD Pipeline](https://github.com/vidura-chathuranga/CTSE-Assignment-01/blob/master/screenshots/overall_diagram.png)
 
 
 ## ✅ How to Run Locally
