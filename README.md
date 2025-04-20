@@ -68,7 +68,7 @@ menu-management-service/
 
 ---
 
-## 📸 Screenshots
+## 📸 CI/CD Workflow
 ![CI/CD Pipeline](https://github.com/vidura-chathuranga/CTSE-Assignment-01/blob/master/screenshots/overall_diagram.png)
 
 
