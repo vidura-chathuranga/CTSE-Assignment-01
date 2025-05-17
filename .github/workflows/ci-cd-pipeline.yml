@@ -32,6 +32,11 @@ jobs:
           java-version: "17"
           distribution: "temurin"
           cache: maven
+
+      - name: Set up environment variables
+        run: |
+          echo "MONGO_DB_URI=${{ secrets.DB_URI }}" >> $GITHUB_ENV
+          echo "ISSUER_URI=${{ secrets.ISSUER_URI }}" >> $GITHUB_ENV
   
       - name: Change to the project directory
         run: cd menu-management-service
