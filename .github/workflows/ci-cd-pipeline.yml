@@ -32,12 +32,7 @@ jobs:
           java-version: "17"
           distribution: "temurin"
           cache: maven
-
-      - name: Set up environment variables
-        run: |
-          echo "MONGO_DB_URI=${{ secrets.DB_URI }}" >> $GITHUB_ENV
-          echo "ISSUER_URI=${{ secrets.ISSUER_URI }}" >> $GITHUB_ENV
-
+  
       - name: Change to the project directory
         run: cd menu-management-service
 
@@ -101,9 +96,6 @@ jobs:
           task-definition: ${{ env.ECS_TASK_DEFINITION }}
           container-name: ${{ env.CONTAINER_NAME }}
           image: ${{ steps.build-image.outputs.image }}
-          environment-variables: |
-            MONGO_DB_URI=${{ secrets.DB_URI }}
-            ISSUER_URI=${{ secrets.ISSUER_URI }}
 
       - name: Deploy Amazon ECS task definition
         uses: aws-actions/amazon-ecs-deploy-task-definition@v2
