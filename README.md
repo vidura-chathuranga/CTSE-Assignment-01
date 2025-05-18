@@ -5,7 +5,7 @@ This project is developed as part of the **CTSE (Cloud Technologies and Software
 ---
 
 ## 👨‍💻 Team Members
-  - IT21244698 - Thilakasiri P.K.V.C.
+  - IT21244698 - Thilakasiri P.K.V.C..
   - IT21307430 - Chanthuka U.L.D.
   - IT21238512 - Soysa W.M.Y.
   
